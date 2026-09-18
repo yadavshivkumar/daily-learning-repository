@@ -1,8 +1,20 @@
-a = 1 
+# Install dependencies as needed:
+# pip install kagglehub[pandas-datasets]
+import kagglehub
+from kagglehub import KaggleDatasetAdapter
 
-b = 5 
+# Set the path to the file you'd like to load
+file_path = ""
 
-print (a + b)
+# Load the latest version
+df = kagglehub.load_dataset(
+  KaggleDatasetAdapter.PANDAS,
+  "ayeshaimran1619/student-academic-stress-level",
+  file_path,
+  # Provide any additional arguments like 
+  # sql_query or pandas_kwargs. See the 
+  # documenation for more information:
+  # https://github.com/Kaggle/kagglehub/blob/main/README.md#kaggledatasetadapterpandas
+)
 
-for i in range(5):
-    print(i)
+print("First 5 records:", df.head())
