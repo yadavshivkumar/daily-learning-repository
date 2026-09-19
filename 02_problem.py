@@ -1,5 +1,4 @@
-a = 34
-
-b = 5
-
-print ("Remainder when a is divided by b is", a % b )
+letter = ''' Dear <|Name|>,
+             You are selected!
+             <|Date|> '''
+print(letter.replace("<|Name|>", "shiv").replace("<|Date|>", "1st January 2050"))
