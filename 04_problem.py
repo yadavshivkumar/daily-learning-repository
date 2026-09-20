@@ -1,5 +1,5 @@
-a = int (input("Enter number 1 :"))
-b = int (input("Enter number 2 :"))
+name = "Harry is a good   boy and "
 
-print("a is greater than b is ", a>b)
-      
+
+print(name.replace("   ", " "))  # Replaces multiple spaces with a single space
+print(name) #Strings are immutable, so the original string remains unchanged
