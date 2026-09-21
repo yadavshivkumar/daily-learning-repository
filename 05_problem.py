@@ -1,5 +1,3 @@
-a = int (input("Enter number 1 :"))
-b = int (input("Enter number 2 :"))
+letter = "Dear Harry, \n\tthis python course is nice. \nThanks!"
 
-
-print("The average of these two number is ", (a + b) / 2)
+print(letter)
