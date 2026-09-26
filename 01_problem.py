@@ -1,20 +1,26 @@
-# Install dependencies as needed:
-# pip install kagglehub[pandas-datasets]
-import kagglehub
-from kagglehub import KaggleDatasetAdapter
+friuts = []
 
-# Set the path to the file you'd like to load
-file_path = ""
+f1 = input("Enter first fruit: ")
+friuts.append(f1)   
+f2 = input("Enter second fruit: ")
+friuts.append(f2) 
+f3 = input("Enter third fruit: ")
+friuts.append(f3)       
+f4 = input("Enter fourth fruit: ")
+friuts.append(f4)
+f5 = input("Enter fifth fruit: ")
+friuts.append(f5)   
+f6 = input("Enter sixth fruit: ")
+friuts.append(f6)
+f7 = input("Enter seventh fruit: ")
+friuts.append(f7)
 
-# Load the latest version
-df = kagglehub.load_dataset(
-  KaggleDatasetAdapter.PANDAS,
-  "ayeshaimran1619/student-academic-stress-level",
-  file_path,
-  # Provide any additional arguments like 
-  # sql_query or pandas_kwargs. See the 
-  # documenation for more information:
-  # https://github.com/Kaggle/kagglehub/blob/main/README.md#kaggledatasetadapterpandas
-)
+# append means to add an element to the list
 
-print("First 5 records:", df.head())
+print(friuts)
+
+fruits = []
+for i in range(1, 8):
+    fruit = input(f"Enter fruit {i}: ")
+    fruits.append(fruit)
+print(fruits)
