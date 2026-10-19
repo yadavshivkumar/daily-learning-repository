@@ -1,5 +1,3 @@
-name = "Harry is a good   boy and "
+a = (23, 3, 43, 54)
 
-
-print(name.replace("   ", " "))  # Replaces multiple spaces with a single space
-print(name) #Strings are immutable, so the original string remains unchanged
+print(sum(a))  
